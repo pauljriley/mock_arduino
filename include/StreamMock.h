@@ -1,5 +1,5 @@
-#ifndef Stream_h
-#define Stream_h
+#ifndef StreamMock_h
+#define StreamMock_h
 
 #include "Stream.h"
 #include <gmock/gmock.h>
@@ -26,4 +26,4 @@ class StreamMock: public Stream {
     MOCK_METHOD1(readStringUntil, String(char));
 };
 
-#endif // Stream_h
+#endif // StreamMock_h

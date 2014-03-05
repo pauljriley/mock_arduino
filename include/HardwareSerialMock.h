@@ -1,5 +1,5 @@
-#ifndef HardwareSerial_h
-#define HardwareSerial_h
+#ifndef HardwareSerialMock_h
+#define HardwareSerialMock_h
 
 #include "HardwareSerial.h"
 #include <gmock/gmock.h>
@@ -23,4 +23,4 @@ public:
   MOCK_METHOD1(write, size_t(uint8_t));
 };
 
-#endif // HardwareSerial_h
+#endif // HardwareSerialMock_h

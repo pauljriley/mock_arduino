@@ -32,9 +32,10 @@ if(DEFINED ENV{TEST})
       ${CMAKE_BINARY_DIR})
 
   add_executable(mock_arduino_test
-      include/hardwareSerial.h
-      include/Stream.h
-      include/Print.h
+      include/hardwareSerialMock.h
+      include/StreamMock.h
+      include/PrintMock.h
+      include/ArduinoMock.h
       )
 
   target_link_libraries(mock_arduino_test gmock gmock_main)

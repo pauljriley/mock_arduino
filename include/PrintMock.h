@@ -1,5 +1,5 @@
-#ifndef Print_h
-#define Print_h
+#ifndef PrintMock_h
+#define PrintMock_h
 
 #include "Print.h"
 #include <gmock/gmock.h>
@@ -44,4 +44,4 @@ class PrintMock : public Print
     MOCK_METHOD1(println, size_t(void));
 };
 
-#endif
+#endif // PrintMock_h
